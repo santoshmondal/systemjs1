@@ -15,7 +15,7 @@
     var mpromise = SystemJS.import('./main.js');
     mpromise.then(function(me){
         var obj = new me.Person();
-
+        console.log(obj);
     }).catch(function(err){
         console.log(err);
     });
